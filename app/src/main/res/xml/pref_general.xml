@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/pref_general_home_location_key"
+        android:summaryOff="Set coordinates as per your wish"
+        android:summaryOn="Pitampura"
+        android:title="@string/pref_general_home_location_label"
+        android:buttonTint="#4caf50"
+/>
+
+    <PreferenceScreen
+        android:title="Location in Coordinates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditTextPreference
+        android:defaultValue="@string/pref_general_latitude_default"
+        android:inputType="text"
+        android:key="@string/pref_general_latitude_key"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_general_latitude_label" />
+
+    <EditTextPreference
+        android:defaultValue="@string/pref_general_longtude_default"
+        android:inputType="text"
+        android:key="@string/pref_general_longitude_key"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_general_longitude_label" />
+
+    <ListPreference
+         android:defaultValue="@string/pref_units_celcius_value"
+         android:key="@string/pref_units_key"
+         android:entries="@array/pref_general_unit_labels"
+         android:entryValues="@array/pref_general_unit_values"
+         android:title="Temperature Units"/>
+</PreferenceScreen>

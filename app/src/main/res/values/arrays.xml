@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <array name="pref_general_unit_labels">
+        <item>@string/pref_units_celcius_label</item>
+        <item>@string/pref_units_kelvin_label</item>
+    </array>
+
+    <array name="pref_general_unit_values">
+        <item>@string/pref_units_celcius_value</item>
+        <item>@string/pref_units_kelvin_value</item>
+    </array>
+
+</resources>
